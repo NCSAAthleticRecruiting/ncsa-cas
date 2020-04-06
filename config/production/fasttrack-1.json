@@ -1,0 +1,8 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https?|imaps?|http?)://.*",
+  "name" : "fasttrack",
+  "id" : 1,
+  "evaluationOrder" : 0,
+  "logo" : "https://recruit-match.ncsasports.org/fasttrack/resources/images/logo_color_norc.png"
+}
