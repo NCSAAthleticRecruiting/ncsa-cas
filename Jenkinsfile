@@ -19,7 +19,7 @@ node {
     sh 'git --no-pager show -s --format="%an -- %ae" | head -1 > committerInfo.txt'
     committerInfo = readFile('committerInfo.txt').trim()
     echo "committerInfo: ${committerInfo}"
-    sh './deploy/script/build.sh'
+    sh './script/build.sh'
   }
 }
 

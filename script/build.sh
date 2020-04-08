@@ -10,8 +10,9 @@ mkdir -p tmp
 
 if [ ! -f build/libs/cas.war ]; then
   echo "cas.war absent, building war file"
-  docker run --rm -u gradle -v "$PWD":/home/gradle/project -w /home/gradle/project gradle:6.3.0-jdk11 gradle build
+  docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project gradle:6.3.0-jdk11 gradle build
 fi
 
+sudo chown -Rf jenkins:jenkins *
 #Copy war file
 cp build/libs/cas.war tmp/cas.war

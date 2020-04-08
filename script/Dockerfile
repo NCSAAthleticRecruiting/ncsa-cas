@@ -4,7 +4,6 @@ FROM tomcat:8.5.53-jdk11-openjdk
 WORKDIR /usr/local/tomcat/
 
 
-
 #Cutomizing fasttrack deploy
 RUN mkdir /usr/local/tomcat/webapps/cas
 COPY cas.war /usr/local/tomcat/webapps/cas.war

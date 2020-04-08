@@ -33,10 +33,10 @@ export DEPLOY_TAG
 # eg DEPLOY_TAG=feature-ecs-deploy-9f3b563-preprod
 DEPLOY_TAG="$RELEASE_TAG-$environment"
 echo "DEPLOY_TAG: $DEPLOY_TAG"
+cp script/Dockerfile tmp/Dockerfile
 cp /var/lib/jenkins/deploy.yml ./deploy.yml
 echo "Deploy to NCSA Target: $DEPLOY_TARGET; DEPLOY_TAG: $DEPLOY_TAG"
 
-cp config/"$RAILS_ENV"/* tmp/
 #Build the docker release image from environment
 ./script/release.sh
 release_image="${REPOSITORY}:${DEPLOY_TAG}"

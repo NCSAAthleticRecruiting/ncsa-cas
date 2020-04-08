@@ -11,9 +11,7 @@ echo "release.sh RAILS_ENV & RELEASE_TAG Environment value for docker image: "
 echo "$RAILS_ENV"
 echo "$RELEASE_TAG"
 
-# Copy env specific config files
 cp config/"$RAILS_ENV"/* tmp/
-
 
 echo "Creating release image with tag: $RELEASE_TAG"
 cd tmp/
