@@ -14,5 +14,6 @@ if [ ! -f build/libs/cas.war ]; then
 fi
 
 sudo chown -Rf jenkins:jenkins *
+sudo chmod 777 *
 #Copy war file
 cp build/libs/cas.war tmp/cas.war
