@@ -1,0 +1,8 @@
+---
+  project: 'ncsa-cas'
+  base_url: '/ncsa-cas'
+  ports:
+    - '8443:8443'
+    - '8089:8080'
+  log_options:
+    - 'log-opt max-size=50m'
