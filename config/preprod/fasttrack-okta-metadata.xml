@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor entityID="http://www.okta.com/exk1imh2tfaReIr360h8" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"><md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"><md:KeyDescriptor use="signing"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIDnjCCAoagAwIBAgIGAW6BMM72MA0GCSqGSIb3DQEBCwUAMIGPMQswCQYDVQQGEwJVUzETMBEG
+A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU
+MBIGA1UECwwLU1NPUHJvdmlkZXIxEDAOBgNVBAMMB3JjaGFtcHMxHDAaBgkqhkiG9w0BCQEWDWlu
+Zm9Ab2t0YS5jb20wHhcNMTkxMTE5MDEwMzQ5WhcNMjkxMTE5MDEwNDQ5WjCBjzELMAkGA1UEBhMC
+VVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDTALBgNVBAoM
+BE9rdGExFDASBgNVBAsMC1NTT1Byb3ZpZGVyMRAwDgYDVQQDDAdyY2hhbXBzMRwwGgYJKoZIhvcN
+AQkBFg1pbmZvQG9rdGEuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoLWO5fCB
+ng/av/prjIsK12kp9b+JDhQSmljPA5E+NydGJJjMJjgaPYm3QJrEXIUlvuXySBKWdTJiPkMZ2pIS
+w+XFViS2G+DdAGF8xeRTT9xtn2IxIZE7GNtfUaiUtFeK0EhWe8bGRvP1OxV0lekt0dF4PsLcI3Xw
+gj9GiSEAX9R4VP1DlkzGflub0aQ967oWYBkvYUN/SxCbqYZg72V/aPmu6FaSz7QjCGfFk5svDur2
+x3NYePnCfqqi0QooB9soum7+Ss7wWLw/QgQXfHxs3ADCs0D3ClOwnFp41SYz7f/7IslROyUmYTBA
+ox7T7W1MMm4vO1oZtE0k/+PX82ZVpQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCa3BAavmafwYFo
+rmSWgEuJ9lTdZfqu5MAV7iPGZjfUryOFCsLU6yRsHBJ7wO+MrSl2uCOnX+ABXK1uokkYfnqnfmpB
+FsG8DKL/dje0iA/ej0ZdLNMJ7vujdGQlFmuy7K6B8kPHrCkXmJp5Hg4XGpzHBG8ju+kjcSU4jUzE
+o0rM7D/Er/uohi1xMmMVFpRh/u3hf0oZJaAZn+WKvTNx9dtTTxg4dASUlyFodxZjkqVHy22I2sc0
+QhhZ8l9hWcS80SJcDVpBDmmnf5RhHdJqY8cM856fM7XsXAa6uMqVGw+jlJByIjfjv9LgoljeIGHG
+b6sW+yxw+BSBBOEHarWMHGRk</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat><md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://rchamps.okta.com/app/reigningchamps_recruitmatchsaml_1/exk1imh2tfaReIr360h8/sso/saml"/><md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://rchamps.okta.com/app/reigningchamps_recruitmatchsaml_1/exk1imh2tfaReIr360h8/sso/saml"/></md:IDPSSODescriptor></md:EntityDescriptor>

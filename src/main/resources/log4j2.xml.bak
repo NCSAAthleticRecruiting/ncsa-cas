@@ -4,12 +4,12 @@
     <Properties>
         <Property name="baseDir">/var/log</Property>
 
-        <Property name="cas.log.level">info</Property>
-        <Property name="spring.webflow.log.level">warn</Property>
-        <Property name="spring.security.log.level">info</Property>
+        <Property name="cas.log.level">debug</Property>
+        <Property name="spring.webflow.log.level">debug</Property>
+        <Property name="spring.security.log.level">debug</Property>
         <Property name="spring.cloud.log.level">warn</Property>
         <Property name="spring.boot.admin.log.level">debug</Property>
-        <Property name="spring.web.log.level">warn</Property>
+        <Property name="spring.web.log.level">debug</Property>
         <Property name="spring.boot.log.level">warn</Property>
         <Property name="ldap.log.level">warn</Property>
         <Property name="pac4j.log.level">warn</Property>

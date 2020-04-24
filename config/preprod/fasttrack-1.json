@@ -3,6 +3,13 @@
   "serviceId" : "^(https?|imaps?|http?)://.*",
   "name" : "fasttrack",
   "id" : 1,
-  "evaluationOrder" : 0,
-  "logo" : "https://recruit-match.ncsasports.org/fasttrack/resources/images/logo_color_norc.png"
+  "evaluationOrder" : 1,
+  "logo" : "https://recruit-match.ncsasports.org/fasttrack/resources/images/logo_color_norc.png",
+  "accessStrategy" : {
+    "@class" : "org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy",
+    "delegatedAuthenticationPolicy" : {
+      "@class" : "org.apereo.cas.services.DefaultRegisteredServiceDelegatedAuthenticationPolicy",
+      "allowedProviders" : [ "java.util.ArrayList", [ "fasttrack-saml" ] ]
+    }
+  }
 }
