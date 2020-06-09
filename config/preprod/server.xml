@@ -68,7 +68,7 @@
     -->
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
-               redirectPort="443" />
+               redirectPort="8443" />
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -85,11 +85,11 @@
          the SSLImplementation selected. JSSE style configuration is used below.
     -->
 
-    <Connector  port="443" protocol="HTTP/1.1"
-                SSLEnabled="true"
-                scheme="https" secure="true" clientAuth="false"
-                sslProtocol="TLS" keystoreFile="/usr/local/tomcat/ncsasports.jks"
-                keystorePass="nc$aUser1" />
+    <Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
+    disableUploadTimeout="true" enableLookups="false" maxThreads="25"
+    port="8443" keystoreFile="/root/.keystore" keystorePass="nc$aUser1"
+    protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
+    secure="true" sslProtocol="TLS" />
 
     <!-- Define an SSL/TLS HTTP/1.1 Connector on port 8443 with HTTP/2
          This connector uses the APR/native implementation which always uses
