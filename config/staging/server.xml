@@ -68,7 +68,7 @@
     -->
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
-               redirectPort="8443" />
+               redirectPort="443" />
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -87,7 +87,7 @@
 
     <Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
     disableUploadTimeout="true" enableLookups="false" maxThreads="25"
-    port="8443" keystoreFile="/root/.keystore" keystorePass="nc$aUser1"
+    port="443" keystoreFile="/root/.keystore" keystorePass="nc$aUser1"
     protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
     secure="true" sslProtocol="TLS" />
 
