@@ -34,7 +34,7 @@ export DEPLOY_TAG
 DEPLOY_TAG="$RELEASE_TAG-$environment"
 echo "DEPLOY_TAG: $DEPLOY_TAG"
 cp script/Dockerfile tmp/Dockerfile
-cp /var/lib/jenkins/.$environment_keystore tmp/.keystore
+cp /var/lib/jenkins/.${environment}_keystore tmp/.keystore
 cp /var/lib/jenkins/deploy.yml ./deploy.yml
 echo "Deploy to NCSA Target: $DEPLOY_TARGET; DEPLOY_TAG: $DEPLOY_TAG"
 
