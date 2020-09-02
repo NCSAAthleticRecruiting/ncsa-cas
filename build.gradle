@@ -16,6 +16,10 @@ buildscript {
             url "https://plugins.gradle.org/m2/" 
             mavenContent { releasesOnly() }
         }
+        maven {
+            url "http://dev.ncsasports.org/artifactory/remote-repos/" 
+            mavenContent { releasesOnly() }
+        }
     }
     dependencies {
         classpath "de.undercouch:gradle-download-task:${project.gradleDownloadTaskVersion}"
