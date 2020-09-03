@@ -16,10 +16,6 @@ buildscript {
             url "https://plugins.gradle.org/m2/" 
             mavenContent { releasesOnly() }
         }
-        maven {
-            url "http://dev.ncsasports.org/artifactory/libs-release-local" 
-            mavenContent { releasesOnly() }
-        }
     }
     dependencies {
         classpath "de.undercouch:gradle-download-task:${project.gradleDownloadTaskVersion}"
@@ -79,7 +75,8 @@ dependencies {
     implementation "org.apereo.cas:cas-server-support-pac4j-webflow:${casServerVersion}"
     implementation "org.jasig.cas:cas-server-support-jdbc:4.2.7"
  //   implementation "org.jasig.cas:cas-server-support-jdbc-drivers:${casServerVersion}"
-    implementation "org.ncsasports:org.ncsasports.sqljdbc:100"
+ //   implementation "org.ncsasports:org.ncsasports.sqljdbc:100"
+    implementation "com.microsoft.sqlserver:mssql-jdbc:8.4.1.jre11"
 }
 
 tasks.findByName("jibDockerBuild")
