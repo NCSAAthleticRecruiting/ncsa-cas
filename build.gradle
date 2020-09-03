@@ -17,7 +17,7 @@ buildscript {
             mavenContent { releasesOnly() }
         }
         maven {
-            url "http://dev.ncsasports.org/artifactory/remote-repos/" 
+            url "http://dev.ncsasports.org/artifactory/libs-release-local" 
             mavenContent { releasesOnly() }
         }
     }
