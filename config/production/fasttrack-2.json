@@ -1,0 +1,16 @@
+{
+  "@class" : "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https?|imaps?|http?)://.*",
+  "name" : "fasttrack-jdbc",
+  "id" : 2,
+  "evaluationOrder" : 2,
+  "logo" : "https://recruit-match.ncsasports.org/fasttrack/resources/images/logo_color_norc.png",
+  "accessStrategy" : {
+    "@class" : "org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy",
+    "enabled" : true,
+    "ssoEnabled" : false
+  },
+  "attributeReleasePolicy" : {
+    "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+  }
+}

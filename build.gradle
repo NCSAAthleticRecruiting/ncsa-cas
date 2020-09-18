@@ -73,9 +73,8 @@ dependencies {
     // Other CAS dependencies/modules may be listed here...
     implementation "org.apereo.cas:cas-server-support-json-service-registry:${casServerVersion}"
     implementation "org.apereo.cas:cas-server-support-pac4j-webflow:${casServerVersion}"
-    implementation "org.jasig.cas:cas-server-support-jdbc:4.2.7"
- //   implementation "org.jasig.cas:cas-server-support-jdbc-drivers:${casServerVersion}"
- //   implementation "org.ncsasports:org.ncsasports.sqljdbc:100"
+    implementation "org.apereo.cas:cas-server-support-jdbc:${casServerVersion}"
+    implementation "org.apereo.cas:cas-server-support-jdbc-drivers:${casServerVersion}"
     implementation "com.microsoft.sqlserver:mssql-jdbc:8.4.1.jre11"
 }
 
