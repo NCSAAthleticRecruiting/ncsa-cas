@@ -2,8 +2,8 @@
 <!-- Specify the refresh internal in seconds. -->
 <Configuration monitorInterval="5" packages="org.apereo.cas.logging">
     <Properties>
-        <Property name="baseDir">/var/log</Property>
-
+        <Property name="baseDir">/usr/local/tomcat/logs</Property>
+       <!-- <Property name="baseDir">/Users/adevanhalli/servers/apache-tomcat-8.5.53/logs</Property> -->
         <Property name="cas.log.level">debug</Property>
         <Property name="spring.webflow.log.level">debug</Property>
         <Property name="spring.security.log.level">debug</Property>
