@@ -1,4 +1,4 @@
-FROM tomcat:8.5.53-jdk11-openjdk
+FROM tomcat:8.5.63-jdk11-openjdk
 
 # set WORKDIR
 WORKDIR /usr/local/tomcat/
